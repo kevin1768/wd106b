@@ -1,0 +1,480 @@
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+        <title>個人網站</title>
+      </head>
+    <style>
+    body
+    {
+        background-image:url('data:image/jpeg;base64,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');
+    }
+    #para1
+    {
+        text-align:center;
+        color:#0000ee;
+        
+    } 
+    #para2
+    {
+    
+        color:#333333;
+    }
+    #para3
+    {
+        text-align:center;
+    
+        
+    } 
+    a:link {background-color:#B2FF99;}    /* 未访问链接 */
+    a:visited {background-color:#FFFF85;} /* 已访问链接 */
+    a:hover {background-color:#FF704D;}   /* 鼠标移动到链接上 */
+    a:active {background-color:#FF704D;}  /* 鼠标点击时 */
+    <html>
+            <head>
+            <meta charset="utf-8">     
+                    </style>
+                
+            <title>個人網站</title>
+            <style>
+            body
+            {
+                background-image:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTExMWFhUWFxUXGBcYGBcdGBgaFxcXFx0YGhUYHSggGBolHRcXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGi0lHSUtLS0rLS0tLS0rLS8tLS8tNS4tMC0vLS0tLy0tLy0tLS0vLS0tLS0tLS0tLS0tLS0tLf/AABEIAMcA/QMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAABAgMABAb/xAAxEAABAwMCBAUDBQADAQAAAAABAAIRAyExQVESYXGBBJGhsfATwdEiMlLh8RRCYnL/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBv/EACIRAQEBAAIDAQEBAAMBAAAAAAABEQIhEjFRQWEicYHwQv/aAAwDAQACEQMRAD8A98+pB7YAusKwwZHUKL7E6YxtqlEQYi4EAGbib8l5d6DxmOpxOg7pkjiRpO90wRgVlkjn4AuUQXzFsqbq3KOphapUIGBJxfXugWACSb7m/ojcn1j4kWv1yqteDghI6QJmR29EXUQeXMIlxRZSpvg8Ls6Hf+1VEsxOo+I64GqX6+4j180texnkQDzSsicRm0Ge6NyTHQ4nSO6ZSY0hoAieao2dUYorIEpH1QMETYISacqJqEC8dd+wTPcWiSQeUJaYESSCd/WyNSAa5jBnpYqjazTab7IMEiQT3/CYAOFwhcOsoTwf/J9P6V0ZsSqvuBr5d+YU21jyPmPI6o+I+xB3E6oUySd45iNuvZG5Ji0yLGE4U2stE907QdTKMUVkr3gZUX+JGB590JxtdC5nP4bcQ8roveAJDpO0z6LUarQOevMo3JkP9IRc3F5TUxaxN905QAiyMaDJi6nVrgWGUfEm0DJU6dA6290aknukAc7Udj9rLfSj/qfNH6Tpt5yuso1y5Z6cbm7h3dJG3l+VQvcfwDH9pajTr6/lVuK0q+h+dlcmFwuHtb/V00zxAHX5oo58+MnZ7O7dfdBjjPCex3RwLAnyUqj7g4I35680Zk1X6YvrP2QogXjcjyTtCwCJoNaRN5HskqVgLZKaqbHyUaXhzr9kaknup3dkjvKc0DsD3Wf4c6f2uhggBGuXL45vpH+Pr9khbfBHWypVDidc84SupkDbpjyVal+jTrEQDddXEInRcMC3y/z2VvDXBB0j56KM8+M9rB4NoKX9pA0PoniMXUazjEEQciL3F0Yi4HqlpnNouQjTMgXn5yTIhQwAk7qL/EaN81Ws63W3mp06AGTPp/qNTPdQaBrPWQuj6Wx9EH+HBwY7KrGwIReXL4g6kRkjupuvt2Kq+iSd/JY+HO4PUKtTlP2uhBzgMoVHwJU2UtXXPso5SftAEklw6D8pi06vjyhVXGI4jx9pRqdumm7IOR90HPMwB+EvhsHabdFMXJBMX3hDO6qS8aA8hKMBw+SEPDukb3iU4bHdEvTmrsAIzg+qfwz4sbGSrcN5QqNkIvlsyjUmLZU6osSf4p2v/SCdpSOPFYY1O/REnSlLA6LOcBlYwByCnTZP6j2GyH9aeIzBgY5lZzdXO9YCsuapZ8kW6Is7UpvvEyDg9NEXuMwM+gSUMkgQEtU/qg4hDO1C1/8AIeSLHTYi+oSeHyQMK3DeUS/HPXpgCw1QoktyCAYXS5srEIvn1lY4skDTAnIv6FaibdCR5JS8usMbn7BEw3hz+kd/co1KgH4WJDR0S0WanJQ69sGkmTbbkkeGjI4j5ldChUYQ7iAlFl1qThNhA1Gx3TVXaTA3/C1NpkuIi0JK1nAkSEPdM2mDcOPmsHkWdfnCFC5JAgK6F+VGsbtHNWUfEDB2Kq0zdEvqCgQs4xdK2qDvfEomHSPpA5TrIkuA1oFgisle4ASUDKdapAjU2CnxcRuSBsiwX/TnVx9kb8c9mZRgCTMeXkqqDg4EGZHRVY4ESES77T8Uf0qoSV2y0o0XyPRD/wCTrLKQrawYxKJmqpXNBymWRAa0DCKyDnAZQFJUqgcztuovfMTIb7pmgf8AQd9kb8fo06Ii+tztKsoVKRjJJ9FSm+dIOyJe+yeKP6VUIVGyISUHGIORZD8VWQJhSNR0SQInGsflEk1ZZZZEZZZK54GSEBKiTwf/AD7I1W3m8csjtslc3BJ4h7c0bkNUcDGom6IuQdBPdE0W5iOlvZTeALS4nYFCZfToSOqgahRFAnJIVP8Ajt2RM4z9D6pP7R30WLQBxOufmFjRjBI+c0lOXZwPUo11+elhDhJHmmRXP4ir/wBZicnZGZNuKsqgmAl4SDIuDkfcJ6bQBATIm/ABUqgLf1DuEa1Ob5jQ/LFJw2kSY0PqEagmqHCAb7apj+qBBAsb+yaGuGAQpPa0YF9gShMXJSOrNGqkPDTm3T8lVbRaNAiZxhBXn9o7lNwRdxn5si6i3p0UWtLiRJLR8hGuvxek+RMQnWUfEVosM+w3RiTb0YVbwLrPp3kZ90tHhAsQrBFvV6IagGbJK0ZBvpGvKNU9RuuCNfmikGgjiEA76f4izPYOqS2HAjnFkRUByW256qlOsCMwlc+f2ieen9ov/RjXbukPiRoCeyLaA1v7KoCM/wCY5hWJMSGqzKYHPmmcBquZlOSeEwPdGur/ABas0nHf/VvpkiCYGw/KR9S5i2BiTJvELNqkZwMyII8kMuG+if5GNv7VGMAwFi28yUyMW2ssssiJV2kiB3VGtgQEKjQRdc8k4k8yYA8so1JsdFSYtlKyiAIzvzUhxGLsJHVP9Yj9wj1RcvqD/wAdqzWEYM9fyqAooz5VN4JETBQbSMQT2FvXKSo8zGI2zfACVrnDewmCQZHIo3JcUPhxoSOQKo1oGFi0GD+fZMjFtrLLLIhKotmOa1JkAAIuAIvhc5v03cbdgjUmzHS4+eiSlTjqclSAJgcWMSPk2Tl7hkSOX4Rc/DGi3YICjGCQnY4ESEyM7U3tkQZ6oNpjfi6/jCnVyZvEROJcUobnkJkCIjRG5Ova1RrbTHJVSfVECbSmBRi6KyyDnAZRC1o4TMxyQY5oAEjzWNUa26gqYpuN7N5AX7o3J12V51GCZn0vyRY2QcAHJknHXAV3WFtlm4E7XQ8ugcydSOhTpCQ0clzVKpPIITjau+uBz6KZrSbggfMpKfDgiPP7qxof+j6IucYlUcLATGudOqZ1cEWG1jhBwj/tJ2ifZSMf5nyyq1JK7HtnGdE64qdUg8l1Of8ANFHPlxs6IAWm37fZVBS0yYukbZ0aG/cZQvZKgJkgGJ72wRujTpkjbexn1Kv0QpzAnKL5dF4WuA9IT4SuIaCVzPql3IbITjb/AMLP8QBzUzVJiW2z83SU3AZA7LoNAc/NGrJxRrOH/UZzpPJMfEWtYoOAGCVNx3v6f0qskrrP6m/fmnC4WuIM+YXU6paRrvhRjlxwHMIMt7jfmOao1wOEtOdT6JH2cDoconvoH0ib2Ge45ospb37kj1VUKbYACHlcBjp0jki5wAQqvgErlaC69z7Is473+Hd4gnA80oeclwteEBULT9iuvhB0Rq5x/HNUeXQLC6Bqv+f0i940aOvzok4dh5H/AFVqSfHcsspGreGifYKOMmhVHEeHuVmcAtIn1RFK19TdL9QXAbMI1/IP/HEzfoquFlPw5zGJty3CR7xJ4j2H3hDLawoc7cihWpxzG+ycUWkS23MSnpuOuQi+V9uN3v8APnVdPh7tEpazCXQNrosBbzHsi8rsVe2dSOkfdQqg63iDpjBCtUYCIKSvZpjJgIzxqoRQbhTdUJMN7nQIzmhVueHuVmvYLD53TClmTMpDVMkNEwjU76N9Jpv/AIqFSoG503HNLUIm94wAPl0MtuA2iMcQ6ao1aW3kmaxrhYflPSnB01RfKuRwO2R/i6PC47oV6ckaLCmW4uNQi2yzFXgamO8KNVugM24hPLmrEAjcJKtm2zgIxxqjTZFK2w6BSkuxZvqUTBqOk8hc9dkQ86Nt1HsnawBR4nOcQDACNTtVpB0vzRe8DKnQyZuRAnf+0sniMZ3PsiePbcTf4kdQY8lQ02m61J8zIxYrNYRjCLaFd2AMkwnY0AQFOp+9vf57KyJfUZc7abmzEGd10LIkuEpMgXzJKiCWk2mcLpWRZyS8O0gXVVlkS3WS1MHoUH1QMqbnF3JupOqLJ+i2pYRcwN/dM1l5OfQIteMD0ToWpV3WjeydjYEKVfLequhfUZQNIgy0i/JXWRJcTpU41knJUy1zSSBMroWRfJOg0gGckyqLLIlusgSkfVAtk7BI8l2f0t55KLOIUah4QALx2VG09SZPoOgQFYSAFVC1HxBsBuYVQpeJ0OxVkL6jKT6AJm/ZVQlEls9BTYAICm+iZkGCcqyyG0lKnA3TrLIlupV2SLZF09N0iUrqoHyynUzLLnXZG5NmK1HRjJsEoJBAJmQfRI9xtIIjWJHphFlVuSb9Ch49LrKJ8SOaV1Z2jD3RPGuhSdUmzb89ApNdP7jHK4CpUfAAbEnHTdF8crNaQcTOqPATd3lt+VRogIVHgCSibaR9HUWIRpPmxyMoUS43PYJnU5vg7hC/K1VkiEKLpF8jKzqkGIJ3/wAUqhDj+n9w1RZLZi1R0C2TYJIIIvMzPkg7i1HcfgrMfFyHE9EJOl1lB3iRsUC9+jYRPGrkqbqhP7fPRRGf1z9vRUfUEANycIvjn/uhFMi4vvKYM1PloPymY2BCz3wJRNoVKYPZLSffhOR6rUeI3PknewHKHrqi5siFKm7h/Se3NF7iCBblOvdJUk2IgHWxvsiyKVjaNzCXgALQOflzWNE4mRsf6QAc0YaO5Qn8q6y5vqPOI+dUTRccu8kTx+1V9QBLLji3XKRtItuAD7rO8T/5M6jZF8fh61r67b8oS1CBBEA7bz0TVADm0YMwmY0aR1/tDei/Xbv216Qt+o/+R6/0mHDPPp906J1CNpgdd9U6yyM6nWcALpfD04EnJ9OSNaJEjXyTfVG/fTzRrvMhnGLlcxLnHiiwwN+cK7wCYI5p0JcR+vyKdlQHBTpXUwdETolaM66RlLUfYfyF4HzCNRzcOjlumpPbgeX9I1PRR4gYMzsjDjmw5G/mn4rxB66JkTfhWMAwmWWRklR4ASeHpxc5PpyTVhi038kDW1gx5e6NT10oTC5iHO/UMDAOqo6o0mLEHn9lUIT/ACl9V38UzKwPLqqIEBE2fE67rYmfJJctAAnmbd907qkG17YHvKza24j1CNTc9BxPFoB5zbyTClqTPsmdOkRr/iZE0AEVlkZTrPgWElajTgczlM8GLZUzVIzA6n8I1O5kS56mTMSYFrBFgiDrMYiRvCZ9DmOe07iMJwyBMSep+6N3lDGoJjVOgDKSrVjmdkc8+KJXPAtquY1XHl2QbUIvxAo3OC7qukXNoKQ0d78pgBTcSTM3jT/Vi8yJvBsizjnpQUmzcQdCCU3A4YM8jlM1wd2VEYvK/pabwRITFSLIPEO40P8AaZr5Fv8ACiWfHOTm+pHlgSj5zIiSCf8AMqj6QiSbxc79kzacC0TvH4RvygufGh6hOg0mL2U6taMZRjN6iqVztIkrmIcd+39IARjinojc4f1d1Q4i5xt17JXUhkwTufsFB98nv8C0nrHfCNTi6C2MgEdMLGhH7THsjTqh1lQlHO2wlOpNsEZCoplodcG41Rpvm2oRLPiFXJtmLbgZCDRYwMiIAI7lX+mIv1RpARbVG/LpncWkHqmCDAQLmealUr6C5RnN9LEpDVuACJK52s4skfPnomNE/wAR5o14ye6eq8tGRfGkf0mY1vI8yommdWnzlIQOY6qr49dOyoyRCZZZRyQ8VUIiNVEUzE+vwrLI6y5xmG8PUMgaLoqEASVlkOc/1HK+oDo0dihGmPUf0ssq3ZjMdwme0Lqe0npHyd0FlGOf5TgABTw4wMhZZGIo9siCmWWRlDxb4A6qbKBjRZZHTc4zC0iQ6B3XW90AnZZZDn7jmfVP+QkPXysVllXSQDYzqCuqOIA8vhWWRnn60XVA2ynxy4Fuojyussok4zNdCACKyOSPicQMlLT8PufL8rLI3tkyFPh3TbzXUVlkZvK1xGSYNze2iL2xm3sssq7b/qR//9k=');
+            }
+            #para1
+            {
+                text-align:center;
+                color:#0000ee;
+                
+            } 
+            #para2
+            {
+                color:#0000ee;
+            }
+            a:link {background-color:#B2FF99;}    /* 未访问链接 */
+            a:visited {background-color:#FFFF85;} /* 已访问链接 */
+            a:hover {background-color:#FF704D;}   /* 鼠标移动到链接上 */
+            a:active {background-color:#FF704D;}  /* 鼠标点击时 */
+            .center { margin:auto }
+            </style>
+            
+    <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <title>kk論壇 </title>
+            <meta http-equiv="imagetoolbar" content="no">
+            <meta name="description" content="興趣嗜好、學術藝文、音樂、圖片、影片。 " />
+            <meta name="keywords" content="kk論壇" />
+            <meta name="MSSmartTagsPreventParsing" content="True" />
+            <meta http-equiv="MSThemeCompatible" content="Yes" />
+            <base href="http://oursogo.com/" /><link rel="stylesheet" type="text/css" href="data/cache/style_1_common.css?JUO" /><link rel="stylesheet" type="text/css" href="data/cache/style_1_forum_index.css?JUO" /><link rel="stylesheet" id="css_extstyle" type="text/css" href="./template/default/style/t1/style.css" /><link rel="stylesheet" type="text/css" href="template/default/common/ddlevelsmenu-base.css" />
+            <link rel="stylesheet" type="text/css" href="template/default/common/ddlevelsmenu-topbar.css" />
+            <script type="text/javascript">
+            if (window != top) {top.location.href=location.href;}
+            </script>
+            <script type="text/javascript">var STYLEID = '1', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'JUO', charset = 'utf-8', discuz_uid = '2408041', cookiepre = 'werA_0ff6_', cookiedomain = '.oursogo.com', cookiepath = '/', showusercard = '0', attackevasive = '0', disallowfloat = 'login|newthread|viewvote|tradeorder|activity|debate|usergroups', creditnotice = '1|威望|,2|SOGO幣|,3|魅力|,4|活動力|', defaultstyle = './template/default/style/t1', REPORTURL = 'aHR0cDovL291cnNvZ28uY29tLw==', SITEURL = 'http://oursogo.com/', JSPATH = 'static/js/';</script>
+            <script src="static/js/common.js?JUO" type="text/javascript"></script>
+            <meta name="application-name" content="kk論壇" />
+            <meta name="msapplication-tooltip" content="kk論壇" />
+            <script type="text/javascript">HTMLNODE.className += ' widthauto'</script>
+            <script src="static/js/forum.js?JUO" type="text/javascript"></script>
+            <script src="static/js/ddlevelsmenu.js?JUO" type="text/javascript"></script>
+            </head>
+            <body id="nv_forum" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
+            <table background="static/image/common/bg_header_big.gif" border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tr>
+                <td width="300" height="110"><a href="./" title="kk論壇"><img src="https://sabinamartincic.files.wordpress.com/2016/10/4-eks-libris-kk.png?w=350&h=223" alt="kk論壇" border="0" /></a>
+                </td>
+                <td height="110" style="width:auto;padding-right:18px;" nowrap>
+            <div id="um">
+                                <div class="avt y"><a href="https://www.facebook.com/profile.php?id=100007293870627"><img src="http://oursogo.com/uc/data/avatar/002/40/80/41_avatar_small.jpg" onerror="this.onerror=null;this.src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-1/p240x240/15781246_1269064749819914_6393959875094944665_n.jpg?_nc_cat=0&oh=3de6022383228cb0cd81feb9d11978e2&oe=5B3A9670"" /></a></div>
+           
+            </div>
+            </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" height="29">
+                  <table border="0" cellspacing="0" cellpadding="0" width="99%" align="center">
+            <tr>
+                      <td width="22"><img src="static/image/common/sogomenu_left.gif" border="0" width="22" height="29"></td>
+                      <td style="width:auto;" background="static/image/common/sogomenu_bg.gif" style="padding-top:1pt">
+            <!-- 下拉選單 Begin -->
+            <div align="center">
+            <table border="0" cellspacing="0" cellpadding="0" width="958" align="center">
+            <tr><td>
+            <div id="ddtopmenubar" class="mattblackmenu" style="text-align:center;">
+            <ul style="display:inline-block;">
+                <li><a href="file:///C:/Users/Kevin/Desktop/kk/03.html" rel="ddsubmenu1"> 基本資料 |</a></li>
+                <li><a href="" rel="ddsubmenu2"> 興趣嗜好 |</a></li>
+                <li><a href="file:///C:/Users/Kevin/Desktop/kk/14.html" rel="ddsubmenu3"> 詩集 |</a></li>
+                <li><a href="file:///C:/Users/Kevin/Desktop/kk/12.html" rel="ddsubmenu4"> 音樂 |</a></li>
+                <li><a href="file:///C:/Users/Kevin/Desktop/kk/05.html" rel="ddsubmenu6"> 影片 |</a></li>
+            <li><a href="file:///C:/Users/Kevin/Desktop/kk/13.html" rel="ddsubmenu6"> 首頁 |</a></li>
+            </ul>
+            </div>
+            </td></tr></table>
+            </div>
+            <script type="text/javascript">
+            ddlevelsmenu.setup("ddtopmenubar", "topbar") //ddlevelsmenu.setup("mainmenuid", "topbar|sidebar")
+            </script>
+          
+            
+    <!-- 下拉選單 End -->
+              </td>
+              <td width="22"><img src="static/image/common/sogomenu_right.gif" border="0" width="22" height="29"></td>
+    </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" height="6"></td>
+      </tr>
+    </table>
+        
+                <br>
+          <h1></h1> 
+          <div class="center" style="width:50%">
+            <div class="center">
+              <p id="para2"><a href="" target="_blank">	第一章 天降綉球</a></p>
+              <p id="para1"><a href="" target="_blank"></a></p>
+              
+            </div>
+        
+            </div>
+          
+            
+    
+        </div>
+    <div id="append_parent"></div><div id="ajaxwaitid"></div>
+    <div id="hd">
+    <div class="wp">
+    
+    <div id="scbar" class="cl">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+    <td style="font-size:13px;padding-left:15px;">
+    
+            <font style="font-size:10px;color:#FFC89B;font-family:新細明體,細明體;">■ </font><a href="file:///C:/Users/Kevin/Desktop/kk/03.html"><span style="font-size:13px;color:#CC0066;;">01</span></a>
+            <font style="font-size:10px;color:#FFC89B;font-family:新細明體,細明體;">■ </font><a href=""><span style="font-size:13px;color:#CC0066;;">02</span></a>
+            <font style="font-size:10px;color:#FFC89B;font-family:新細明體,細明體;">■ </font><a href="file:///C:/Users/Kevin/Desktop/kk/14.html"><span style="font-size:13px;color:#CC0066;;">03</span></a>
+            <font style="font-size:10px;color:#FFC89B;font-family:新細明體,細明體;">■ </font><a href="file:///C:/Users/Kevin/Desktop/kk/12.html"><span style="font-size:13px;color:#CC0066;;">04</span></a>
+            <font style="font-size:10px;color:#FFC89B;font-family:新細明體,細明體;">■ </font><a href="file:///C:/Users/Kevin/Desktop/kk/05.html"><span style="font-size:13px;color:#CC0066;">05</span></a>
+            <font style="font-size:10px;color:#FFC89B;font-family:新細明體,細明體;">■ </font><a href="file:///C:/Users/Kevin/Desktop/kk/13.html"><span style="font-size:13px;color:#CC0066;">06</span></a></td>
+            <td align="right">
+    <form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="search.php?searchsubmit=yes" target="_blank">
+    <input type="hidden" name="mod" id="scbar_mod" value="search" />
+    <input type="hidden" name="formhash" value="32bf4c97" />
+    <input type="hidden" name="srchtype" value="title" />
+    <input type="hidden" name="srhfid" value="" id="dzsearchforumid" />
+    <input type="hidden" name="srhlocality" value="forum::index" />
+    <table cellspacing="0" cellpadding="0">
+    <tr>
+    <td class="scbar_hot_td">
+    <div id="scbar_hot">
+    </div>
+    </td>
+    <td class="scbar_icon_td"></td>
+    <td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="請輸入搜尋內容" autocomplete="off" /></td>
+    <td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="showmenu xg1 xs2" onclick="showMenu(this.id)" hidefocus="true">搜尋</a></td>
+    <td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" class="pn pnc" value="true"><strong class="xi2 xs2">搜尋</strong></button></td>
+    <td></td>
+    </tr>
+    </table>
+    </form>
+    </td>
+    </tr>
+    </table>
+    </div>
+    <ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="forum" class="curtype">主題</a></li><li><a href="javascript:;" rel="blog">日誌</a></li><li><a href="javascript:;" rel="album">相冊</a></li><li><a href="javascript:;" rel="group">社群</a></li><li><a href="javascript:;" rel="user">會員</a></li></ul>
+    <script type="text/javascript">
+    initSearchmenu('scbar', '');
+    </script>
+    </div>
+    </div>
+    <h1></h1> 
+    <div class="center" style="width:50%">
+      
+        <br>
+      <div class="center">
+          <p>瞧一瞧看一看嘞！”</p>
+                
+                <p>  “包子，新鲜出炉的包子！”</p>
+                
+                    <p>   “几位大爷，别站在外面，进来玩玩嘛……”</p>
+                
+                    <p>   繁华的街道上，商铺鳞次栉比，小摊摆满了道路两旁，吆喝声此起彼伏，人来人往，好不热闹。</p>
+                
+                    <p>  城内一处偏僻的陋巷中，几名乞丐无精打采的靠在墙上。</p>
+                
+                    <p>  正午的太阳太毒，坐在外面乞讨屁股会被烫熟，等到再过一个时辰，天气凉上一些，他们才会出去讨饭。</p>
+                
+                    <p> 巷子最里面，横躺着一个人。</p>
+                
+                    <p>  那是一个年轻人，面色苍白，身着素色衣袍，躺在那里一动不动，已有数个时辰。</p>
+                
+                    <p>  乞丐们时而瞥一眼巷子里面，随口闲聊。</p>
+                
+                    <p>  “啧啧，不知道是什么人，下手这么狠……”</p>
+                
+                    <p>   “那些人下手是重了点，但这书生的身子骨也太弱了，不抗揍，都躺了几个时辰了，也不知道能不能挺过来……”</p>
+                
+                    <p>“他明天要是还醒不过来，这条巷子就不能待了，免得到时候被官府查到，做了别人的替罪羊……”</p>
+                
+                    <p>……</p>
+                
+                    <p>不知道从何处传来的嘈杂声音一直在冲击着唐宁的耳膜，听不清内容，让人心烦意乱，他想要堵住耳朵，却发现自己做不到。</p>
+                
+                    <p>他的意识无比的清晰，却控制不了自己的身体，哪怕只是动动手指，或是睁开眼睛。</p>
+                
+                    <p>身体各处隐隐传来的痛感，让他变的更加清醒，一些记忆开始清晰的在脑海中浮现。</p>
+                
+                    <p> 两个小时之前，他刚刚完成了两篇毕业论文的答辩，顺利的拿到了西北某所高校的双硕士学位，在这之前，为了修改论文，他已经两天两夜没合过眼了。</p>
+                
+                    <p> 从学校离开，赶回从小长大的孤儿院时，他终于忍不了疲累，在公交上睡着了。</p>
+                
+                    <p>>一觉醒来，就是现在。</p>
+                
+                    <p>外面环境嘈杂，身体酸痛，睁不开眼------难道他睡着的时候，发生了车祸？</p>
+                
+                    <p>唐宁只能想到这一个可能。他有些庆幸，又有些害怕，庆幸的是他还有意识，起码命是保住了，怕的是自己变成植物人，老院长离开之后，他在这个世界上就没有亲人了，不知道医院会怎么对待一个联系不上任何家属和朋友的植物人？</p>
+                
+                    <p>他开始努力的控制自己的身体，拼命的睁开眼睛。</p>
+                
+                    <p>……</p>
+                
+                    <p>一道小小的身影从巷口走进来，那是一个小乞丐，衣服破烂打满补丁，却不像其他乞丐一样污秽，乱糟糟的头发下面，一双眸子清澈有神。</p>
+                
+                    <p>小乞丐走到巷子最深处，看了一眼躺在地上的身影，脚步顿了顿，从他身旁绕过去，在他身旁的墙角蹲下。</p>
+                
+                    <p>听着那些乞丐的议论，小乞丐的目光望向了躺在地上的年轻人。</p>
+                
+                    <p>那人的手指动了动，似乎是口渴，短时间之内，舔了数次嘴唇。</p>
+                
+                    <p>小乞丐忽然站起来，向巷子外面走去。</p>
+                
+                    <p> 唐宁依然不能控制他的身体，眼皮也还重若万钧，但他已经能够动动手指，舔一舔干涩的嘴唇。</p>
+                
+                    <p>身边忽然传来轻微的脚步声，似乎是有人走近了，那人在他身边停下，没过多久，便有清凉的液体滑进了他的喉咙。</p>
+                
+                    <p> 如果说唐宁的嘴唇是干裂的土地，那么这一丝凉意就是久旱的甘霖。</p>
+                
+                    <p> 唐宁惊喜的发现，他可以控制自己的身体了。</p>
+                
+                    <p>他艰难的睁开眼睛，沙哑着声音：“护士，我……”</p>
+                
+                    <p>他的声音戛然而止，因为他看到的不是穿着护士服的白衣天使，他看到的是一张脏兮兮的小脸，大概十一二岁，不辨男女，头发也乱糟糟的，唯有一双大眼睛炯炯有神。</p>
+                
+                    <p>对方的手里拿着一片荷叶，折起来，做成容器，容器里面有水，刚才应该就是用这个喂他的。</p>
+                
+                    <p> 这里也不是医院，他更不是躺在病床上，他躺在一条巷子里，不远处几个衣衫褴褛的乞丐，靠在墙上，正用古怪的眼神望着他。</p>
+                
+                    <p>小乞丐见他醒了，便默默的退回墙角，不再看他。</p>
+                
+                    <p> “咕，咕咕……”</p>
+                
+                    <p>唐宁首先需要弄清楚的，不是他在什么地方，也不是他是怎么来到这里的，是他怎么才能填饱他的肚子。</p>
+                
+                    <p>他饿的连站起来的力气都没有了……</p>
+                
+                    <p>小乞丐从怀里掏出一个纸包，打开，里面有一个凉了的包子。</p>
+                
+                    <p>“咕，咕咕……”唐宁盯着那只包子。</p>
+                
+                    <p>小乞丐将包子凑到嘴边。</p>
+                
+                    <p>“咕，咕咕……”唐宁还盯着那只包子。</p>
+                
+                    <p>小乞丐看了看他，脏兮兮的小脸上露出犹豫之色，想了好一会儿，将那只包子分成两半，递了一半过来。</p>
+                
+                    <p>唐宁没有犹豫的，将那半只包子塞进嘴里，大口吞下。</p>
+                
+                    <p>白菜馅的。</p>
+                
+                    <p>小乞丐将剩下的半只包子凑到嘴边，耳边再次传来声音：“咕，咕咕……”</p>
+                
+                    <p>这次唐宁没有看小乞丐，小乞丐手里的包子已经凑到了嘴边，却没有咬下去。</p>
+                
+                    <p>过了一会儿，另外半只包子被递过来，唐宁没有接。</p>
+                
+                    <p>小乞丐将那半只包子放在了荷叶上，站起身，走出了巷子。</p>
+                
+                    <p>唐宁看着巷外，努力的将那道背影记在心里。许久，他拿起那半只白菜馅的包子，塞进嘴里，大口的吞咽下去。</p>
+                
+                    <p>包子很大，馅很足，一个包子下肚，他终于恢复了几分力气。</p>
+                
+                    <p>他把手伸进口袋，准备掏出手机。</p>
+                
+                    <p>没有口袋，更没有手机。</p>
+                
+                    <p>他低下头，终于意识到什么地方不对了。</p>
+                
+                    <p>他的衣服，他的鞋子，他的------他的手！</p>
+                
+                    <p> 他的脸上露出难以置信之色，伸手摸了摸他的脸，有些茫然的左右四顾，向不远处的一汪雨后水洼走去……</p>
+                
+                    <p> 水面之上，映出一张陌生至极的脸。</p>
+                
+                    <p>……</p>
+                
+                    <p>唐宁站在巷子口，再往前两步，就是人来人往的街道。</p>
+                
+                    <p>他面露迷茫，伸出双手，低头看了看，到现在还不能接受这个现实。</p>
+                
+                    <p>不能接受他的身体，他的样貌，他所处的这个世界……</p>
+                
+                    <p> 他只不过是在公交车上睡了一觉啊！</p>
+                
+                    <p>身边人来人往，全都是古人装扮，他迈步出去，绕着街道走了一圈，没有发现摄像机之类的东西，没有一点儿现代科技的痕迹。</p>
+                
+                    <p>让他看到一辆汽车，一台空调，哪怕是一辆三轮车也好……</p>
+                
+                    <p>没有，什么都没有，别说三轮车了，连自行车都没有。</p>
+                
+                    <p>如果不是他的身体，他或许还会有一丝希望，可看着这明显小了一号的双手，左手上那道前几天不小心划伤的痕迹也消失的无影无踪……</p>
+                
+                    <p>他二十三岁硕士毕业，现在这具身体，顶多十六七岁的样子，无论是样貌还是体型，都和之前大不一样。</p>
+                
+                    <p> 他自小对中华传统文化感兴趣，硕士时期，除本专业之外，还拿下了汉语言文学硕士的学位，闲暇时间也看小说，传统的，网络的，对于这种情形再也熟悉不过。</p>
+                
+                    <p> 这如果不是梦的话，他可能大概也许，是穿越了。</p>
+                
+                    <p>就在昨天，他刚刚看完了一本名为《逍遥小书生》的历史穿越小说，里面的主角就是在图书馆睡了一觉之后穿越的，和他的情形有些相似。</p>
+                
+                    <p>不同的是，那个名叫李易的家伙，穿越的时候，脑子里面有一座图书馆，凭借海量的现代知识，在异世界裂土封王，最后和一群妻妾过上了没羞没臊的生活。</p>
+                
+                    <p> 其他类型的穿越小说他也看过一些，别人穿越了，都有戒指、系统、图书馆，在白胡子老爷爷的指导下，踏上一条逆天的绝世强者之路……</p>
+                
+                    <p>他什么都没有。</p>
+                
+                    <p> 他连自己是谁，家住哪里都不知道，穿越者混成这个样子，除了还不能接受穿越的现实之外，他还有些伤心。</p>
+                
+                    <p> 他浑浑噩噩的走在街上，没有系统，没有金手指就算了，好歹让他知道自己是谁，家在哪里，这是什么地方，下一顿还能不能吃到白菜馅的包子……</p>
+                
+                    <p>腹中饥饿难耐，心中郁闷透顶，唐宁忍不住抬头竖起中指，怒骂道：“贼老天，要不要这么……”</p>
+                
+                    <p>一团黑影在他的眼前迅速放大。</p>
+                    <p>一团黑影在他的眼前迅速放大。</p>
+                
+                    <p>砰！</p>
+                
+                    <p></p>街边一处两层小楼之上，俏丽女子看着街上应声而倒的年轻人，霎时怔住。</p>
+                
+                    <p> 她捂住脸，喃喃道：“完了，手滑了……”</p>
+                
+                    <p>阁楼之上，开始有人匆匆下来。</p>
+                
+                    <p> 街道上，人群中，一名年轻男子看着倒在地上的人影，高声道：“快，快把绣球给我抢回来！”</p>
+                
+                    <p> 唐宁躺在地上，脑海嗡鸣一片，有湿润的东西沿着额头流下来。</p>
+                    
+                    <p> 他怀里抱着一个大红的球状物，实心的。</p>
+                
+                    <p>他不敢再骂贼老天了，他怕下一次天上掉下来的不是石头，是刀子。</p>
+                
+                    <p>他抱紧了怀里的东西，这是凶器，这是证物！</p>
+                
+                    <p>自己都被砸出血了，怎么也得赔点钱吧？</p>
+                
+                    <p>有了钱，他要买包子，买十个！</p>
+                
+                    <p> 他还要还给那个小乞丐一个包子，不，还十个，一百个！</p>
+                
+                    <p> 身边传来杂乱的脚步声，那些人在抢他怀里的证物。</p>
+                
+                    <p>唐宁蜷起身子，将那东西紧紧的抱在怀里，咬紧牙关，死也不松手。</p>
+                
+                    <p> 一群王八蛋，自己都这样了，他们还要抢走凶器，销毁证物------他们还是人吗！</p>
+                
+                    <p> 开始有拳头落在他的身上，然后是脚。</p>
+                
+                    <p>  他小时候在孤儿院，没少受这样的欺负，仍然死死的抱着那只凶器。</p>
+                
+                    <p> 这不是凶器，这是证物，是包子，一百个……</p>
+                
+                    <p> “住手，快住手……”</p>
+                
+                    <p> 有凌厉的声音响起，唐宁睁开眼睛，看到几名穿着古装剧中官差衣服的人快步走过来。</p>
+                
+                    <p> 这是他最后能看到的画面了……</p>
+          <p></p>
+          <p></p>
+          <p></p>
+      </div>
+    
+    <!-- 主頁開始 -->
+    <div id="wp" class="wp"><div class="a_mu">
+    <script src="" type="text/javascript"></script>
+    <!-- 論壇首頁上方970x250 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:970px;height:250px"
+         data-ad-client="ca-pub-4448233460558855"
+         data-ad-slot="1043411269"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </div>
+    <div id="pt" class="bm cl">
+    <div class="z">
+    <a href="./" class="nvhm" title="首頁">kk論壇</a><em>&raquo;</em><a href="./">kk論壇</a></div>
+    <div class="z"></div>
+    </div>
+    
+    
+    
+    <style id="diy_style" type="text/css"></style>
+    
+    <div class="wp">
+    <!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+    </div>
+    
+    
+    <div class="mn">
+    
+    <div class="fl bm"><div class="bm bmw  flg cl">
+    <div class="bm_h cl">
+    <span class="o">
+    <img id="category_49_img" src="static/image/common/collapsed_no.gif" title="收起/展開" alt="收起/展開" onclick="toggle_collapse('category_49');" />
+    </span>
+    <h2><a href="http://oursogo.com/forum.php?gid=49" style="font-family:新細明體,細明體;">≡ 品味生活 ≡</a></h2>
+    </div>
+    <div id="category_49" class="bm_c" style=" background: #FFF4F3; ">
+    
+    <table border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+      <tr>
+    <td style="width:auto; border-right: 1px dashed #FFBE9C;">
+    
+    <table cellspacing="0" cellpadding="0" class="fl_tb">
+    
+      <tr>
+        <td width="2"><img src="static/image/common/ddlink.gif" width="2" height="21"></td>
+        <td background="static/image/common/ddlink.gif" align="center" valign="middle" class="copy" nowrap>
+    Powered by <strong><a href="http://www.discuz.net" target="_blank">Discuz!</a></strong> <em>X2</em> &copy; 2001-2017 <a href="http://www.comsenz.com" target="_blank">Comsenz Inc.</a>
+    </td>
+      </tr>
+    </table>
+    <span id="scrolltop" onclick="window.scrollTo('0','0')">回頂部</span>
+    <script type="text/javascript">_attachEvent(window, 'scroll', function(){showTopLink();});</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://www.googletagmanager.com/gtag /js?id=UA-6272726-1" type="text/javascript"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-6272726-1');
+    </script>
+    </style>
+    
+      <body>
+       
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      </body>
+    </html>
